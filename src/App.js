@@ -1,15 +1,16 @@
-import React from 'react';
-import { Button } from './components';
+import React, {Component} from 'react';
+import { Auth } from './pages';
 
-function App() {
-  return (
-    <div className="App">
-      <div className="wrapper">
-        <h1>Hi</h1>
-          <Button className='qwe'>Это кнопка</Button>
-      </div>
-    </div>
-  );
+
+class App extends Component {
+    render() {
+        return (
+            <div className='wrapper'>
+                <Auth/>
+            </div>
+        )
+    }
+
 }
 
 export default App;
